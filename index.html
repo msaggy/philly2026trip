@@ -5183,7 +5183,7 @@ const Roost = (() => {
   function resize(){
     const st = $("#roost-stage"); if (!st.clientWidth) return;
     const sw = st.clientWidth - 4, sh = st.clientHeight - 4;
-    scale = sw / W; H = Math.round(clamp(sh / scale, 600, 660)); BOARD_BOT = H - 6; scale = Math.min(scale, sh / H); dpr = Math.min(3, window.devicePixelRatio || 1);
+    scale = sw / W; H = Math.round(clamp(sh / scale, 570, 660)); BOARD_BOT = H - 6; scale = Math.min(scale, sh / H); dpr = Math.min(3, window.devicePixelRatio || 1);
     if (lv) layout();
     canvas.style.width = Math.round(W * scale) + "px"; canvas.style.height = Math.round(H * scale) + "px";
     canvas.width = Math.round(W * scale * dpr); canvas.height = Math.round(H * scale * dpr); boardBg = null; draw();
